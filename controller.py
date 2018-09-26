@@ -145,7 +145,7 @@ class ActionController(npyscreen.ActionControllerSimple):
             self.parent.wStatus2.value = "God Mode enabled"
         else:
             self.parent.wStatus2.value = "Denied"
-
+				
     def create_board(self, *args):
         if args is None or len(args) < 3:
             self.parent.wStatus2.value = "admin create <name> <countryballs> <description>"
