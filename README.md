@@ -1,11 +1,11 @@
 # cursedboard
 Ncurse based textboard for ssh. 
-> ssh whisper.onthewifi.com
+> ssh bbs.shiptoasting.com
 
-- Shitpost in style with markup 
+- Comfypost in style with markup 
 - Browse with arrow keys and vim style commands 
 - Sqlite3 backend scaling to the moon and beyond
-- ~~Countryball~~ Countryletter posting
+- Country posting
 - File Browser, Image and Text Viewer for the full multimedia experience
 - Fuelled by npyscreen
 
@@ -19,5 +19,4 @@ Needs python3, npyscreen and GeoIP. Use pip3 install -r requirements or packages
 5. Touch .hushlogin in the user directory to avoid an IP leak
 6. Disable TCP Forwarding for the user in sshd\_config 
 7. Disable the sftp Subsystem or make sure its not set to internal-sftp in sshd\_config
-8. ???
-9. Comfy Posting 
+8. ENJOY

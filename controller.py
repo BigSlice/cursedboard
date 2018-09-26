@@ -35,15 +35,16 @@ The sftp server allows files up to 10MB and with the filename set 0-9a-Z_-.
 """
 
 RULES_TEXT = """
-Decency is appreciated. That's all.
-
-You can make *text* bold and
+			 --rule (singular)--
+Nothing illegal kudasai!!!
+			   --tips & trix--
+Text contained in asterisks will be *bold*
 >>1
->neurosuggest that this was a good idea
+>Who are you quoting?
 
 Keeping a board or thread open will refresh on new posts.
  
-                 S T A Y  C O M F Y
+              S T A Y  C O M F Y
 
 """
 
