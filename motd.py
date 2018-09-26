@@ -13,7 +13,7 @@ MMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM |||| MMMMMM  O  MM
 ----------------.||.-------------------.||.-------------------.||.-------------------.||.-------------------.|
 MMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM ||
 ----------------.||.-------------------.||.-------------------.||.-------------------.||.-------------------.|
-MMMM  O  MMMMMM |||| WHISPE  O  RMMMMM |||| MMMMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM ||
+MMMM  O  MMMMMM |||| BUNKER  O  MMMMMM |||| MMMMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM ||
 ----------------.||.-------------------.||.-------------------.||.-------------------.||.-------------------.|
 MMMM  O  MMMMMM |||| MMMMMM  O   CHAN  |||| MMMMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM ||
 ----------------.||.-------------------.||.-------------------.||.-------------------.||.-------------------.|
@@ -27,12 +27,12 @@ MMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM |||| MMMMMM  O  MM
 ----------------.||.-------------------.||.-------------------.||.-------------------.||.-------------------.|
 MMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM ||
 ----------------.||.-------------------.||.-------------------.||.-------------------.||.-------------------.|
-MMMM  O  :h for |||| help    O  MMMMMM |||| MMMMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM ||
+MMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM ||
 ----------------'||`-------------------'||`-------------------'||`-------------------'||`-------------------'|
 =============I===´`=====================´`=====================´`=====================´`=====================´
-             |
-             |           we're the bits that quitely exchange in the bustling flow around the globe
-~~~~~~~~~~~~~´             NEWS: sftp bit@whisper.onthewifi.com 10MB Limit simple ASCII filenames
+ h or :h for |                  Alola!~ Welcome to Bunkerchan, have an easy day!
+    help     |    Source kindly appropriated from: https://github.com/whisperchan/cursedboard.git
+~~~~~~~~~~~~~´ NEWS: Image hosting/GeoIP disabled until someone can tell me how to import them wwwww
 """
 
 line_state = 0
@@ -88,7 +88,7 @@ class MotdTextfield(npyscreen.Textfield):
             for i in range(position[0], position[1]):
                 color[i] = random.choice([yellow, cyan, green, red])
 
-        regex = re.compile(":h for")
+        regex = re.compile("h or :h for")
         for group in regex.finditer(value):
             position = group.span()
             for i in range(position[0], position[1]):
@@ -100,6 +100,11 @@ class MotdTextfield(npyscreen.Textfield):
             for i in range(position[0], position[1]):
                 color[i] = red | curses.A_BOLD
 
+        regex = re.compile("Alola!~")
+        for group in regex.finditer(value):
+            position = group.span()
+            for i in range(position[0], position[1]):
+                color[i] = yellow | curses.A_BOLD
 
         regex = re.compile("O")
         for group in regex.finditer(value):

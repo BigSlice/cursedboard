@@ -271,7 +271,7 @@ class BoardView(npyscreen.FormMuttActiveTraditional):
         self.wBanner.values = banner
 
     def stats_update(self):
-        self.wStatus2.value = "%s Bits connected at tick %s " % (
+        self.wStatus2.value = "%s Anons connected at time %s " % (
             get_connected_users(), datetime.now())
 
     def while_waiting(self):

@@ -1,6 +1,6 @@
 import npyscreen
 import hashlib
-import GeoIP
+#import GeoIP
 
 from config import *
 from utils import *
@@ -161,15 +161,15 @@ class PostForm(npyscreen.ActionPopup):
 
         country = ""
         if self.parentApp.authenticated():
-            country = "##BOT##"
+            country = "##Admin##"
         elif self.parentApp.myDatabase.board_has_country_balls(self.parentApp.myBoardId):
-            gi = GeoIP.new(GeoIP.GEOIP_MEMORY_CACHE)
+#            gi = GeoIP.new(GeoIP.GEOIP_MEMORY_CACHE)
             ip = os.getenv("SSH_CLIENT")
             if not ip:
                 country = "Onion"
             else:
                 ip = ip.split(" ")[0]
-                country = gi.country_name_by_addr(ip)
+#                country = gi.country_name_by_addr(ip)
 
         hashphrase = None
         salt = None

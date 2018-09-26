@@ -17,7 +17,7 @@ class BoardList(npyscreen.MultiLineAction):
         })
 
     def display_value(self, value):
-        return "%s %s ticked %s" % (padr("/%s/" % (value[1]), 10), padr(value[2], 40), prettydate(value[3]))
+        return "%s %s last reply %s" % (padr("/%s/" % (value[1]), 10), padr(value[2], 40), prettydate(value[3]))
 
     def actionHighlighted(self, value, keypress):
         self.parent.parentApp.myBoardId = int(value[0])
@@ -76,7 +76,7 @@ class Frontpage(npyscreen.FormMuttActiveTraditional):
         self.stats_update()
 
     def stats_update(self):
-        self.wStatus2.value = "%s Bits connected at tick %s " % (
+        self.wStatus2.value = "%s Anons connected at time %s " % (
             get_connected_users(), datetime.now())
         self.wMain.values = self.parentApp.myDatabase.get_boards()
 

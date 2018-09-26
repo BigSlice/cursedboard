@@ -37,25 +37,13 @@ The sftp server allows files up to 10MB and with the filename set 0-9a-Z_-.
 RULES_TEXT = """
 Decency is appreciated. That's all.
 
-You can country ball on /int/.
-
 You can make *text* bold and
 >>1
 >neurosuggest that this was a good idea
 
 Keeping a board or thread open will refresh on new posts.
  
-                 S T A Y  C O M F Y 
-
-       and listen to the whispering machines
-
-
-/cyb/erspace   for technology, security, culture, etc.
-/meat/space    for cooking, diy, gardening,  etc.
-/prog/gramming for all discussions around programming.
-/int/national  country balling like in the old days.
-/b/            everything else and quality shit posts.
-/meta/         for all your nagging needs.
+                 S T A Y  C O M F Y
 
 """
 
