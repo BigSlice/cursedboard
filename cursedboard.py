@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 import npyscreen
+import session
 import curses
+import sys
 
 from config import *
 from database import Database
@@ -42,6 +44,9 @@ class TestApp(npyscreen.NPSAppManaged):
 
 if __name__ == "__main__":
     try:
+        if len(sys.argv) == 2:
+            session.parse_session(sys.argv[1])
+
         App = TestApp()
         App.run()
     except npyscreen.wgwidget.NotEnoughSpaceForWidget:

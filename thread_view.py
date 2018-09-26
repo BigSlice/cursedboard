@@ -9,6 +9,7 @@ import random
 from datetime import datetime
 
 import npyscreen
+import session
 
 from config import *
 from utils import *
@@ -60,6 +61,9 @@ class ThreadView(npyscreen.FormMuttActiveTraditional):
         self.add_handlers({
             curses.KEY_BACKSPACE: self.action_controller.current_board,
         })
+
+        if session.jump_to_bottom:
+            self.wMain.h_show_end(None)
 
     def stats_update(self):
         self.wStatus2.value = "%s Anons connected at time %s " % (
@@ -116,3 +120,5 @@ class ThreadView(npyscreen.FormMuttActiveTraditional):
 
         files = os.listdir(thread_path)
         return [name for name in files if re.match("{}_.*".format(pid), name)] 
+    def jump_to_bottom(self):
+        self.wMain.h_show_end(None)
