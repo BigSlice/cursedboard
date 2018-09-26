@@ -105,6 +105,30 @@ class MotdTextfield(npyscreen.Textfield):
             position = group.span()
             for i in range(position[0], position[1]):
                 color[i] = yellow | curses.A_BOLD
+				
+        regex = re.compile("BUNKER")
+        for group in regex.finditer(value):
+            position = group.span()
+            for i in range(position[0], position[1]):
+                color[i] = cyan | curses.A_BOLD
+				
+        regex = re.compile("CHAN")
+        for group in regex.finditer(value):
+            position = group.span()
+            for i in range(position[0], position[1]):
+                color[i] = cyan | curses.A_BOLD
+				
+        regex = re.compile("MMMMMM")
+        for group in regex.finditer(value):
+            position = group.span()
+            for i in range(position[0], position[1]):
+                color[i] = random.choice([cyan, normal])
+				
+        regex = re.compile("MMMM")
+        for group in regex.finditer(value):
+            position = group.span()
+            for i in range(position[0], position[1]):
+                color[i] = random.choice([cyan, normal])
 
         regex = re.compile("O")
         for group in regex.finditer(value):
@@ -119,29 +143,6 @@ class MotdTextfield(npyscreen.Textfield):
                     color[i] = yellow
                 else:
                     color[i] = green
-
-        regex = re.compile("WHISPE")
-        for group in regex.finditer(value):
-            if random.random() > 0.80:
-                flir = cyan
-            else:
-                flir = normal
-
-            position = group.span()
-            for i in range(position[0], position[1]):
-                color[i] = flir
-
-        regex = re.compile("R")
-        for group in regex.finditer(value):
-            position = group.span()
-            for i in range(position[0], position[1]):
-                color[i] = flir
-
-        regex = re.compile("CHAN")
-        for group in regex.finditer(value):
-            position = group.span()
-            for i in range(position[0], position[1]):
-                color[i] = flir
 
         self._highlightingdata = color
 
