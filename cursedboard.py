@@ -11,7 +11,7 @@ from frontpage import Frontpage
 from board_view import BoardView
 from post_form import PostForm
 from file_browser import FileBrowser, TextViewer, DeleteFileForm
-#from image_viewer import ImageViewer
+from image_viewer import ImageViewer
 
 class TestApp(npyscreen.NPSAppManaged):
     def onStart(self):
@@ -28,7 +28,7 @@ class TestApp(npyscreen.NPSAppManaged):
         self.addForm("THREAD", ThreadView)
         self.addForm("FILES", FileBrowser)
         self.addForm("TEXTVIEWER", TextViewer)
-#        self.addForm("IMGVIEWER", ImageViewer)
+        self.addForm("IMGVIEWER", ImageViewer)
         self.addForm("DELETEFILE", DeleteFileForm)
         # Disable mouse, easier copy / paste
         curses.mousemask(0)
