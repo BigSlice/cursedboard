@@ -32,7 +32,7 @@ MMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM |||| MMMMMM  O  MM
 =============I===´`=====================´`=====================´`=====================´`=====================´
  h or :h for |                  Alola!~ Welcome to Bunkerchan, have an easy day!
     help     |    Source kindly appropriated from: https://github.com/whisperchan/cursedboard.git
-~~~~~~~~~~~~~´ NEWS: Image hosting/GeoIP disabled until someone can tell me how to import them wwwww
+~~~~~~~~~~~~~´ NEWS: Images disabled until someone can tell me how to import them WITHOUT BREAKING SFTP
 """
 
 line_state = 0
