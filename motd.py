@@ -9,36 +9,34 @@ MOTD = """
 =================.,=====================.,=====================.,=====================.,=====================.
 |||||||||||||||| || ||||||||||||||||||| || ||||||||||||||||||| || ||||||||||||||||||| || ||||||||||||||||||| |
 ----------------.||.-------------------.||.-------------------.||.-------------------.||.-------------------.|
-MMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM ||
+LPME  O  MMMMMM |||| MMMMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM ||
 ----------------.||.-------------------.||.-------------------.||.-------------------.||.-------------------.|
-MMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM ||
+MMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM |||| MMMMMM  O   WAYQ  |||| MMMMMM  O  MMMMMM ||||  9/11   O  MMMMMM ||
 ----------------.||.-------------------.||.-------------------.||.-------------------.||.-------------------.|
 MMMM  O  MMMMMM |||| BUNKER  O  MMMMMM |||| MMMMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM ||
 ----------------.||.-------------------.||.-------------------.||.-------------------.||.-------------------.|
-MMMM  O  MMMMMM |||| MMMMMM  O   CHAN  |||| MMMMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM ||
+MMMM  O  MMMMMM |||| MMMMMM  O   CHAN  |||| MMMMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM |||| MMMMMM  O  CANADA ||
 ----------------.||.-------------------.||.-------------------.||.-------------------.||.-------------------.|
-MMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM ||
+MMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM |||| CRYPTO  O   LOSS  |||| MMMMMM  O  MMMMMM ||
+----------------.||.-------------------.||.-------------------.||#####################||.-------------------.|
+MMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM ||||  ALEX   O  MMMMMM |||#  |      #   |  |  #||| MMMMMM  O  MMMMMM ||
+----------------.||.-------------------.||.-------------------.||#  |      #   |  |  #||.-------------------.|
+MMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM |||#####################||| MMMMMM  O  MMMMMM ||
+----------------.||.-------------------.||.-------------------.||#  |      #   |     #||.-------------------.|
+MMMM  O   JEWS  |||| MMMMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM |||# 	|  |   #   |  __ #||| MMMMMM  O  Q-LARP ||
+----------------.||.-------------------.||.-------------------.||#####################||.-------------------.|
+MMMM  O  MMMMMM |||| ECHOES  O  MMMMMM |||| MMMMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM ||
 ----------------.||.-------------------.||.-------------------.||.-------------------.||.-------------------.|
-MMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM ||
-----------------.||.-------------------.||.-------------------.||.-------------------.||.-------------------.|
-MMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM ||
-----------------.||.-------------------.||.-------------------.||.-------------------.||.-------------------.|
-MMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM ||
-----------------.||.-------------------.||.-------------------.||.-------------------.||.-------------------.|
-MMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM ||
-----------------.||.-------------------.||.-------------------.||.-------------------.||.-------------------.|
-MMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM ||
+MMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM |||| MMMMMM  O  MMMMMM |||| MMMMMM  O   JBCS  |||| MMMMMM  O  MMMMMM ||
 ----------------'||`-------------------'||`-------------------'||`-------------------'||`-------------------'|
 =============I===´`=====================´`=====================´`=====================´`=====================´
- h or :h for |                  Alola!~ Welcome to Bunkerchan, have an easy day!
-    help     |    Source kindly appropriated from: https://github.com/whisperchan/cursedboard.git
-~~~~~~~~~~~~~´ NEWS: Images disabled until someone can tell me how to import them WITHOUT BREAKING SFTP
+ h or :h for |                Alola!~ Welcome to Bunkerchan, have an easy day!
+     help    |     Source code can be found here: https://github.com/BigSlice/cursedboard
+~~~~~~~~~~~~~´ NEWS: Images enabled! Thank eqi. sftp nanashi@bbs.shiptoasting.com 10 MB limit
 """
 
 line_state = 0
 flir = 0
-
-
 
 class MotdTextfield(npyscreen.Textfield):
     '''Special textfield for animating the motd'''
@@ -61,25 +59,13 @@ class MotdTextfield(npyscreen.Textfield):
 
         color = [normal]*len(value)
 
-
         if line_state < 14:
             if value.find("~~~~~~~~~~~~~´") > -1:
                 color[line_state] = blue
                 line_state = (line_state + 1) % 18
         elif line_state == 14:
-            if value.find("             |        we") > -1:
+            if value.find("|     S") > -1:
                 color[13] = blue
-                line_state = (line_state + 1) % 18
-        elif line_state == 15:
-            if value == "             |":
-                color[13] = blue
-                line_state = (line_state + 1) % 18
-        elif line_state == 16:
-            if value.find("=============I") > -1:
-                color[13] = blue
-                line_state = (line_state + 1) % 18
-        elif line_state == 17:
-            if value.find("=============I") > -1:
                 line_state = (line_state + 1) % 18
 
         regex = re.compile("NEWS:")
@@ -118,11 +104,77 @@ class MotdTextfield(npyscreen.Textfield):
             for i in range(position[0], position[1]):
                 color[i] = cyan | curses.A_BOLD
 				
+        regex = re.compile("help")
+        for group in regex.finditer(value):
+            position = group.span()
+            for i in range(position[0], position[1]):
+                color[i] = red | curses.A_BOLD
+				
+        regex = re.compile("CRYPTO")
+        for group in regex.finditer(value):
+            position = group.span()
+            for i in range(position[0], position[1]):
+                color[i] = red | curses.A_BOLD
+
+        regex = re.compile("LOSS")
+        for group in regex.finditer(value):
+            position = group.span()
+            for i in range(position[0], position[1]):
+                color[i] = red | curses.A_BOLD
+			
+        regex = re.compile("ALEX")
+        for group in regex.finditer(value):
+            position = group.span()
+            for i in range(position[0], position[1]):
+                color[i] = red | curses.A_BOLD
+
+        regex = re.compile("JEWS")
+        for group in regex.finditer(value):
+            position = group.span()
+            for i in range(position[0], position[1]):
+                color[i] = red | curses.A_BOLD
+				
+        regex = re.compile("9/11")
+        for group in regex.finditer(value):
+            position = group.span()
+            for i in range(position[0], position[1]):
+                color[i] = yellow | curses.A_BOLD
+				
+        regex = re.compile("WAYQ")
+        for group in regex.finditer(value):
+            position = group.span()
+            for i in range(position[0], position[1]):
+                color[i] = green | curses.A_BOLD
+				
+        regex = re.compile("ECHOES")
+        for group in regex.finditer(value):
+            position = group.span()
+            for i in range(position[0], position[1]):
+                color[i] = cyan | curses.A_BOLD
+				
+        regex = re.compile("CANADA")
+        for group in regex.finditer(value):
+            position = group.span()
+            for i in range(position[0], position[1]):
+                color[i] = red | curses.A_BOLD
+				
+        regex = re.compile("JBCS")
+        for group in regex.finditer(value):
+            position = group.span()
+            for i in range(position[0], position[1]):
+                color[i] = cyan | curses.A_BOLD
+				
         regex = re.compile("MMMMMM")
         for group in regex.finditer(value):
             position = group.span()
             for i in range(position[0], position[1]):
                 color[i] = random.choice([cyan, normal])
+				
+        regex = re.compile("#")
+        for group in regex.finditer(value):
+            position = group.span()
+            for i in range(position[0], position[1]):
+                color[i] = random.choice([red, yellow])
 				
         regex = re.compile("MMMM")
         for group in regex.finditer(value):
